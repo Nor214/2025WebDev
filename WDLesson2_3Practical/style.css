@@ -14,7 +14,7 @@ img{border-radius: 20px;}
     background-image: linear-gradient(to right, blue, white);
 }
 /* Challenge 7: For the HTML element with an id of "logo_container" align the text in the center */
-#logo_container{text-align: center;}
+#logoContainer{text-align: center;}
 /* Challenge 8: Change the height of all images with a class of "logo" to 200px*/
 .logo{height: 200px;}
 /* Challenge 9: Change the padding to 40px for all divs */
