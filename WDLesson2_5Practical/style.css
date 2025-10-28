@@ -17,12 +17,12 @@
 /* Challenge 12: When the visitor moves their mouse over images inside of the element with an id of firstGallery,
                  apply some type of styling using the filter( ) effect
 */
-#firstGallery img{filter: grayscale(100);}
+#firstGallery img{filter: grayscale(5);}
 #firstGallery img:hover{filter: grayscale(0);}
 /* Challenge 13: When the visitor moves their mouse over images inside of the element with an id of secondGallery,
                  apply some other type of styling.
 */
-#secondGallery img{filter: grayscale(100);}
+#secondGallery img{filter: grayscale(5);}
 #secondGallery img:hover{filter: grayscale(0);}
 /* Challenge 14: Change the transition for all elements to 1 second */
-body{transition: 1;}
+*{transition: 1s;}
