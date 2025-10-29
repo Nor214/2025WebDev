@@ -5,11 +5,16 @@
 /* Challenge 9: Change the background color for all elements with a class of banner.  Choose a color
                 using rgb( )
 */
-.banner{background-color: rgb(99, 110, 128), color(white);}
+.banner{
+    background-color: rgb(150, 116, 144), 
+    color(white);
+}
 /* Challenge 10: Change the background color for all elements with a class of subbanner.  Choose a color
                 using a hexdecimal value. 
 */
-.subbanner{background-color: #5C6263, color(white);}
+.subbanner{
+    background-color: #5C6263, 
+}
 /* Challenge 11: Change the radius of the border to 6px and height to 200px for all images inside of all 
                  elements with a class of gallery 
 */
