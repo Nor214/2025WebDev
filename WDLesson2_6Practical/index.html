@@ -15,8 +15,9 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
     <script src="script.js"></script>
     <style>
+      body{background-color: gainsboro;}
       /* Challenge 6: Using internal styling,  change the color of the web page.
-
+      
       /* Further challenges are located in style.css  */
 
       /* Challenge 12: Create the other pages in the sitemap using index.html as the template. 
@@ -30,14 +31,23 @@
   </head>
   <body>
     <!-- Challenge 1: Create the navigation bar in support of the sitemap associated with the website. -->
-
+    <div id="nav">
+      <a href="html.html">HTML</a>
+      <a href="css.html">CSS</a>
+      <a href="js.html">JavaScript</a>
+    </div>
     <!-- Challenge 2: Create a banner container with heading of "Web Development".  Give it a class of "banner".-->
-
+    <div class="banner">
+      <h1>Web Development</h1>
+    </div>
     <div class="main">
       <!-- Challenge 3: Add the image of webicons.png-->
+       <img src="webicons.png" style="width: 20%; height: 20%;">
       <!-- Challenge 4: Using inline styling, resize the above image appropriately -->
       <!-- Challenge 5: Write a paragraph describing web development.  Discuss the purpose of HTML, CSS and JavaScript -->
-
+      <p>
+        The purpose of HTML, CSS, and JavaScript is to make the web-pages you see on a day to day basis. HTML is a language to put stuff inside a web-page, CSS helps style said web-pages, and JavaScript is used for server-sides coding.
+      </p>
     </div>
 
   </body>
