@@ -31,4 +31,5 @@ veg1.innerHTML = vegetable.value
 veg2.innerHTML = vegetable2.value
 girlspan.innerHTML = girl.value
   /* Task 5: Set the display property of the element with an id of "story" to 'block' */
+  document.getElementById("story").style.display = "block";
 }
