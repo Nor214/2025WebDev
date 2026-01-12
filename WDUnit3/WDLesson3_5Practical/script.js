@@ -4,11 +4,21 @@
       3) Display the results in the appropriate element
 */
 function recArea(){
+      let Rwidth = parseFloat(document.getElementById("recWidth").value);
+      let Rheight = parseFloat(document.getElementById("recHeight").value);
 
+      let result = Rwidth * Rheight
+
+      output.innerHTML = result
 }
 
 function recPerimeter(){
+      let Rwidth = parseFloat(document.getElementById("recWidth").value);
+      let Rheight = parseFloat(document.getElementById("recHeight").value);
 
+      let result = (Rwidth * Rheight) * 2
+
+      output.innerHTML = result
 }
 
 
@@ -20,11 +30,19 @@ function recPerimeter(){
 let pi = 3.1415926;
 
 function cirArea(){
+      let radius = parseFloat(document.getElementById("radius").value);
 
+      let result = pi * radius ^ 2
+
+      output.innerHTML = result
 }
 
 function cirPerimeter(){
+      let radius = parseFloat(document.getElementById("radius").value);
 
+      let result = 2 * pi * radius
+
+      output.innerHTML = result
 }
 
 /* Challenge Bonus: Complete the area and perimeter functions below for the triangle.  Guidelines,
