@@ -51,9 +51,20 @@ function cirPerimeter(){
       3) Display the results in the appropriate element
 */
 function triArea(){
+      let SLA = parseFloat(document.getElementById("SLA").value);
+      let SLB = parseFloat(document.getElementById("SLB").value);
+      let SLC = parseFloat(document.getElementById("SLC").value);
 
+      let result = SLA + SLB + SLC
+
+      output.innerHTML = result
 }
 
 function triPerimeter(){
+      let base = parseFloat(document.getElementById("base").value);
+      let height = parseFloat(document.getElementById("height").value);
 
+      let result = 1/2 * base * height
+
+      output.innerHTML = result
 }
