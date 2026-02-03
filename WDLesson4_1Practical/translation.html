@@ -21,9 +21,8 @@
 
         if (lang == "Chinese"){
           house = "房子"
-        }
-        let output = document.getElementById("output");      
-        output.innerHTML = house
+        }     
+        output.innerHTML = `House in ${lang} is ${house}`
         }
         // Challenge 11: Display an appropriate message stating "house" in the specified language is given translation.
 
@@ -50,7 +49,7 @@
     <div class="container">
       <div class="card">
         <h3> Translate house into another language </h3>
-        <select id="langauge">
+        <select id="language">
           <option disabled>Select language</option>
           <option>Spanish</option>
           <!-- Challenge 8: Add two more language as shown above -->
