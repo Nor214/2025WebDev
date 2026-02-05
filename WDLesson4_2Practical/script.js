@@ -11,9 +11,24 @@ function name(){
 
 }
 */
-
 /* Challenge 2:  Create the function for Challenge 1 scenario */
+function RecArea(){
+  let width = parseFloat(document.getElementById("width").value)
+  let height = parseFloat(document.getElementById("height").value)
+  let message = ""
+  let output = document.getElementById("output")
 
+  let Area = width * height
+
+  if(width <= 0 || height <= 0){
+    message = "Inappropriate measurement"
+  } else {
+    message = Area
+  }
+
+  output.innerHTML = message
+
+  }
 
 
 /* Challenge 3:  Complete the function for Pets Challenge on pets.html.  
@@ -21,5 +36,35 @@ function name(){
 2) You will need to write HTML as part of the output.  
    For example, output.innerHTML = `<input src="pic.png">` would place the image in the <div>*/
 function pet(){
+  let animal = document.getElementById("animal").value
+  let emotion = document.getElementById("emotion").value
+  let output = document.getElementById("output")
+  let filename = ""
+
+  if(animal == "Bear" && emotion == "Funny"){
+    filename = "funnyBear.jpg"
+  }
+
+  if(animal == "Cat" && emotion == "Funny"){
+    filename = "funnyCat.jpg"
+  }
+
+  if(animal == "Dog" && emotion == "Funny"){
+    filename = "funnyDog.jpg"
+  }
+
+  if(animal == "Bear" && emotion == "Sad"){
+    filename = "sadBear.jpg"
+  }
+
+  if(animal == "Cat" && emotion == "Sad"){
+    filename = "sadCat.jpg"
+  }
+
+  if(animal == "Dog" && emotion == "Sad"){
+    filename = "sadDog.jpg"
+  }
+
+  output.innerHTML = `<img src="${filename}">`
 
 }
