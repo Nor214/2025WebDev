@@ -14,3 +14,30 @@ Guideline:
 Use past examples, classwork and practicals to assist you in completing this practical.
 */
 
+function BodyMass(){
+
+        output.innerHTML = "bfd"
+
+       let w = parseInt(document.getElementById("weight").value);
+       let h = parseInt(document.getElementById("height").value);
+       let output = document.getElementById("output");
+       let filename = ""
+
+       let Final = w / (h * h)
+
+
+       if(Final < 18.5){
+              filename = "underweight.png"
+       } else if(Final >= 18.5 && Final <= 24.9){
+              filename = "healthyweight.png"
+       } else if(Final >= 25 && Final <= 29.9){
+              filename = "overweight.png"
+       } else if(Final >= 30 && Final <= 34.9){
+              filename = "obeseweight.png"
+       } else if(Final >= 35){
+              filename = "obeseweight.png"
+       }
+}
+       
+
+
