@@ -15,28 +15,32 @@ Use past examples, classwork and practicals to assist you in completing this pra
 */
 
 function BodyMass(){
-
-        output.innerHTML = "bfd"
-
-       let w = parseInt(document.getElementById("weight").value);
-       let h = parseInt(document.getElementById("height").value);
+       let w = parseFloat(document.getElementById("weight").value);
+       let h = parseFloat(document.getElementById("height").value);
        let output = document.getElementById("output");
        let filename = ""
-
-       let Final = w / (h * h)
+       let msg = ""
+       let Final = w / h ** 2
 
 
        if(Final < 18.5){
               filename = "underweight.png"
+              msg = "Underweight"
        } else if(Final >= 18.5 && Final <= 24.9){
               filename = "healthyweight.png"
+              msg = "Healthy Weight"
        } else if(Final >= 25 && Final <= 29.9){
               filename = "overweight.png"
+              msg = "Overweight"
        } else if(Final >= 30 && Final <= 34.9){
               filename = "obeseweight.png"
+              msg = "Obese"
        } else if(Final >= 35){
               filename = "obeseweight.png"
+              msg = "Extremely Obese"
        }
+
+       output.innerHTML = `Your BMI is ${msg}. <img src="${filename}">`
 }
        
 
