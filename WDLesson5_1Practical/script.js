@@ -15,16 +15,16 @@ Year N: $xxxxxx
 
 function CompoundInterest(){
     let P = parseFloat(document.getElementById("principal").value);
-    let R = parseFloat(document.getElementById("interest").value);
+    let R = parseFloat(document.getElementById("interest").value) / 100;
     let N = parseFloat(document.getElementById("numbertimes").value);
     let T = parseFloat(document.getElementById("periods").value);
     let output = document.getElementById("output");
     let build = "";
     let APlaceH = P * (1 + R/N)**(N * T)
 
-    for (let T = 0; T < N; T+=1){
-        let A = Math.floor(P * (1 + R/N)**(N * T))
-        build += `Year ${T}: ${A}<br>`
+    for (let i = 1; i < T; i+=1){
+        let A = P * (1 + R/N)**(N * i);
+        build += `Year ${i}: $${A.toFixed(2)}<br>`;
     }
 
     output.innerHTML = build
