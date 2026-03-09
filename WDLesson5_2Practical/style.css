@@ -54,3 +54,7 @@ input[type="text"]{
 .title{
   height: 50px;
 }
+
+#cost{
+  color: white;
+}
