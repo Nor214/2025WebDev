@@ -19,7 +19,7 @@ function init(){
    output = document.getElementById("output")
    let build = ""
 
-   for(let i = 1; i < 5; i += 1){
+   for(let i = 1; i <= 5; i += 1){
       build += `<div class="card container">`
       build += `  <img class="title" src="images/title${i}.png">`
       build += `  <img class="pizza" src="images/pizza${i}.jpg">`
