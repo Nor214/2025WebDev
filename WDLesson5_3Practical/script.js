@@ -11,17 +11,17 @@
 */
 
 function balance(){
-        let P = parseFloat(document.getElementById("p").value) / 100;
+        let P = parseFloat(document.getElementById("p").value);
         let R = parseFloat(document.getElementById("r").value) / 100;
-        let T = parseFloat(document.getElementById("t").value) / 100;
+        let T = parseFloat(document.getElementById("t").value);
         let output = document.getElementById("output");
-        let build = "<table>"
+        let build = "<table><tr><th>Year</th><th>Balance</th></tr>"
 
-        for(let i = 0; i <= T * 100; i += 1){
-               let A =  (P * (1 + (R / i))**(i / T))
-               build += `<tr><td>${i}</td><td>$${A.toFixed(2)}</td></tr>`
+        for(let i = 1; i <= T; i += 1){
+               let A =  P * Math.pow(1 + R, i);
+               build += `<tr><td>${i}</td><td>$${A.toFixed(2)}</td>`;
         }
-
+        build += "</table>"
         output.innerHTML = build
 }
 
