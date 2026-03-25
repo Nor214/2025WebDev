@@ -21,13 +21,14 @@ function init(){
   let d = document.getElementById("desserts");
   let build = ``;
   //Challenge 4:  Build cards for the meats. Place the build in the meat container. 
-  for(let i = 0; i <= meats.length; i += 1){
-    build += `<div class="card container">`
-    build += `  <h2>${meat_titles[i]}</h2>`
-    build += `  <img src="${meats[i]}">`
-    build += `  <h1>${meat_prices[i]}</h1>`
+  for(let i = 0; i < meats.length; i += 1){
+    build += `<div class="card">`
+    build += `  <h2>${meat_titles[i]}</h2`
+    build += `  <img src="images/${meats[i]}">`
+    build += `  <span>${meat_prices[i]}</span>`
     build += `</div>`
   }
+  m.innerHTML = build
   //Challenge 5:  Build cards for the seafoods. Place the build in the seafood container.
 
   //Challenge 6:  Build cards for the desserts. Place the build in the dessert container.
