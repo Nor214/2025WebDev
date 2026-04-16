@@ -16,13 +16,13 @@ async function init(){
   */
   for(let i = 1; i < data.length; i += 1){
     let criminal = data[i]
-    build += `<div class="card">`
+    build += `<div class="card fixedsize">`
     build += `  <h2>${criminal.title}</h2>`
     build += `  <p>sex: ${criminal.sex}</p>`
-    build += `  <img src="${criminal.image}">`
+    build += `  <img class="fit" src="${criminal.image}">`
     build += `  <p>${criminal.details}</p>`
-    build += `  <a href="${criminal.url}">More</a>`
-    build += `  <a href="https://mozilla.github.io/pdf.js/web/viewer.html?file=${criminal.pdf}">PDF</a>`
+    build += `  <a target="_blank" href="${criminal.url}">More</a>`
+    build += `  <a target="_blank" href="https://mozilla.github.io/pdf.js/web/viewer.html?file=${criminal.pdf}">PDF</a>`
     build += `</div>`
   }
 

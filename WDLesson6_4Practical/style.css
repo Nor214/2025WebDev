@@ -76,3 +76,8 @@ nav a:hover{
   height:150px;
   object-fit:cover;
 }
+
+.fixedsize{
+  max-width: 500px;
+  max-height: 1000px;
+}
