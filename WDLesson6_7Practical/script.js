@@ -9,6 +9,7 @@ async function startup(){
         let Collision = data[i]
         build += `<div class="card">`
         build +=    `<h2>${Collision.on_street_name}</h2>`
+        build +=    `<h3>${Collision.borough}</h3>`
         build +=    `<p>${Collision.off_street_name}</p>`
         build +=    `<hr>`
         build +=    `<p>Vehicle_1 Contributor: ${Collision.contributing_factor_vehicle_1}</p>`
@@ -20,8 +21,8 @@ async function startup(){
         build +=    `<p>Total People Injured: ${Collision.number_of_persons_injured}</p>`
         build +=    `<p>Total People Killed: ${Collision.number_of_persons_killed}</p>`
         build +=    `<hr>`
-        build +=    `<p>${Collision.crash_date}</p>`
-        build +=    `<p>${Collision.crash_time}</p>`
+        build +=    `<p>Date: ${Collision.crash_date}</p>`
+        build +=    `<p>Time: ${Collision.crash_time}</p>`
         build += `</div>`
     }
 
@@ -38,6 +39,7 @@ function SearchByStreet(){
         if(Collision.on_street_name == Street){
             build += `<div class="card">`
             build +=    `<h2>${Collision.on_street_name}</h2>`
+            build +=    `<h3>${Collision.borough}</h3>`
             build +=    `<p>${Collision.off_street_name}</p>`
             build +=    `<hr>`
             build +=    `<p>Vehicle_1 Contributor: ${Collision.contributing_factor_vehicle_1}</p>`
@@ -49,8 +51,8 @@ function SearchByStreet(){
             build +=    `<p>Total People Injured: ${Collision.number_of_persons_injured}</p>`
             build +=    `<p>Total People Killed: ${Collision.number_of_persons_killed}</p>`
             build +=    `<hr>`
-            build +=    `<p>${Collision.crash_date}</p>`
-            build +=    `<p>${Collision.crash_time}</p>`
+            build +=    `<p>Date: ${Collision.crash_date}</p>`
+            build +=    `<p>Time: ${Collision.crash_time}</p>`
             build += `</div>`
             }
     }
@@ -68,6 +70,7 @@ function SearchByVehicle(){
         if(Collision.vehicle_type_code1 == Vehicle || Collision.vehicle_type_code2 == Vehicle){
             build += `<div class="card">`
             build +=    `<h2>${Collision.on_street_name}</h2>`
+            build +=    `<h3>${Collision.borough}</h3>`
             build +=    `<p>${Collision.off_street_name}</p>`
             build +=    `<hr>`
             build +=    `<p>Vehicle_1 Contributor: ${Collision.contributing_factor_vehicle_1}</p>`
@@ -79,8 +82,8 @@ function SearchByVehicle(){
             build +=    `<p>Total People Injured: ${Collision.number_of_persons_injured}</p>`
             build +=    `<p>Total People Killed: ${Collision.number_of_persons_killed}</p>`
             build +=    `<hr>`
-            build +=    `<p>${Collision.crash_date}</p>`
-            build +=    `<p>${Collision.crash_time}</p>`
+            build +=    `<p>Date: ${Collision.crash_date}</p>`
+            build +=    `<p>Time: ${Collision.crash_time}</p>`
             build += `</div>`
             }
     }
