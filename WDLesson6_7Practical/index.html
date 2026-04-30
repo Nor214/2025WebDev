@@ -7,11 +7,13 @@
     </head>
     <body onload="startup()">
         <div>
-            <div>
-                <input type="text" placeholder="Enter Streetname (ALL CAPS)" id="Street">
-                <input type="button" value="Search" onclick="SearchByStreet()">
-                <input type="text" placeholder="Enter Vehicle" id="Vehicle">
-                <input type="button" value="Search" onclick="SearchByVehicle()">
+            <div class="top">
+                <input type="text" placeholder="Enter Streetname(ALL CAPS)" id="Street" class="edge">
+                <input type="button" value="Search" onclick="SearchByStreet()" class="edge">
+                <input type="text" placeholder="Enter Vehicle" id="Vehicle" class="edge">
+                <input type="button" value="Search" onclick="SearchByVehicle()" class="edge">
+                <input type="text" placeholder="Enter Borough(ALL CAPS)" id="Borough" class="edge">
+                <input type="button" value="Search" onclick="SearchByBorough()" class="edge">
             </div>
             <div id="output"> </div>
         </div>
