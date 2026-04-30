@@ -7,7 +7,7 @@ async function startup(){
     let build = "";
     for(let i = 0; i < data.length; i+=1){
         let Collision = data[i]
-        build += `<div class="card">`
+        build += `<div class="card line">`
         build +=    `<h2>${Collision.on_street_name}</h2>`
         build +=    `<h3>${Collision.borough}</h3>`
         build +=    `<p>${Collision.off_street_name}</p>`
@@ -37,7 +37,7 @@ function SearchByStreet(){
     for(let i = 0; i < data.length; i+=1){
         let Collision = data[i]
         if(Collision.on_street_name == Street){
-            build += `<div class="card">`
+            build += `<div class="card line">`
             build +=    `<h2>${Collision.on_street_name}</h2>`
             build +=    `<h3>${Collision.borough}</h3>`
             build +=    `<p>${Collision.off_street_name}</p>`
@@ -68,7 +68,7 @@ function SearchByVehicle(){
     for(let i = 0; i < data.length; i+=1){
         let Collision = data[i]
         if(Collision.vehicle_type_code1 == Vehicle || Collision.vehicle_type_code2 == Vehicle){
-            build += `<div class="card">`
+            build += `<div class="card line">`
             build +=    `<h2>${Collision.on_street_name}</h2>`
             build +=    `<h3>${Collision.borough}</h3>`
             build +=    `<p>${Collision.off_street_name}</p>`

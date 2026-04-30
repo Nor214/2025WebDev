@@ -2,7 +2,6 @@ html{
   font-family: monospace;
 }
 
-
 .card{
   flex:1;
   margin:10px;
@@ -21,9 +20,12 @@ html{
 
 .container{
   display:flex;
-  padding:10px;
 }
 .center{
   justify-content:center;
   align-items:center;
+}
+
+.line{
+  display: inline-block; width: 50%;
 }
