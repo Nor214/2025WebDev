@@ -10,9 +10,9 @@ function card(info){
               <h4>${info.issue_date}</h4>
               <h4>${info.violation_time}</h2>
               <hr>
-              <p>${info.license_type}</p>
-              <p>${info.issuing_agency}</p>
-              <p>${info.county}</p>
+              <p>License Type: ${info.license_type}</p>
+              <p>Issuing Agency: ${info.issuing_agency}</p>
+              <p>County: ${info.county}</p>
            </div>`;
   return build;
 }
